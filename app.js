@@ -35,7 +35,6 @@ app.use(function(req, res, next){
   next();
 });
 
-mongodb+srv://quizituser:vK0fO9U3iqwGtcS1@quizit.eywdt.mongodb.net/QuizIt?retryWrites=true&w=majority
 const uri = process.env.DATABASEURL || "mongodb://localhost:27017/quiz";
 
 mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
